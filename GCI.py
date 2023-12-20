@@ -38,7 +38,7 @@ def GCI(h1,h2,h3,phi1,phi2,phi3,order,step):
 	epsilon32 = phi3-phi2
 	epsilon21 = phi2-phi1
 	s = 1*np.sign(epsilon32/epsilon21)
-	p_guess = np.linspace(step,order,order/step)
+	p_guess = np.linspace(step,order,int(order/step))
 	p_computed = p_guess*0
 	# print(p)
 	#print(p_guess[1])
